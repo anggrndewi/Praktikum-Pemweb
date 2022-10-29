@@ -7,11 +7,17 @@
     <title>Static Template</title>
 
     <style>
-      .bg_atas header {
+      .container {
+        width: 900px;
+        margin: 10px auto;
+        height: 200px;
+      }
+
+      .container header {
         background-color: #f7f766;
         height: 200px;
         width: 900px;
-        margin: 10px auto;
+        margin: 2px auto;
       }
       .logo img {
         width: 150px;
@@ -21,9 +27,9 @@
         clear: both;
       }
       .logo h1 {
-        position: absolute;
-        top: 50px;
-        left: 300px;
+        float: center;
+        margin-top: -65px;
+        margin-left: 200px;
       }
 
       nav {
@@ -63,25 +69,30 @@
         text-align: center;
       }
 
-      .tentang p {
+      .Minions p {
         background-color: #fafab8;
-        margin: 20px 200px 20px 30px;
+        margin: 20px 340px 10px 30px;
         padding: 15px;
       }
 
-      .tentang video {
-        position: absolute;
-        top: 280px;
-        left: 500px;
+      .Minions video {
+        margin-top: -130px;
+        float: right;
+      }
+
+      .Tayang {
+        padding-top: 30px;
+        padding-bottom: 20px;
       }
 
       table,
       th,
       td {
         border: 1px solid;
+        margin-left: 30px;
       }
 
-      .pengalaman table thead tr {
+      .Tayang table thead tr {
         background-color: #f7f766;
       }
 
@@ -121,7 +132,7 @@
     </style>
   </head>
   <body>
-    <div class="bg_atas">
+    <div class="container">
       <header>
         <div class="logo">
           <img src="minions.png" alt="minions" />
@@ -135,143 +146,143 @@
           </ul>
         </nav>
       </header>
+
+      <main>
+        <div class="Minions">
+          <h3>#Minions</h3>
+          <p>
+            Minions The Rise of Gru adalah sekuel dari prekuel spin-off Minions
+            (2015) dan menjadi film kelima secara keseluruhan dalam franchise
+            Despicable Me. Dalam film ini, Pierre Coffin tidak menjadi
+            sutradaranya. Namun, putra sastrawan dan novelis Nh. Dini (almarhum)
+            itu masih mengisi suara para Minions (Kevin, Stuart, Bob, Otto, dan
+            lainnya).
+          </p>
+
+          <video controls width="300" height="175">
+            <source src="minions.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="Tayang">
+          <h3>#Tayang</h3>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Jadwal Tayang</th>
+                <th rowspan="2">Lokasi</th>
+                <th colspan="2">Waktu</th>
+              </tr>
+
+              <tr>
+                <th>Mulai</th>
+                <th>Selesai</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td style="text-align: center;">1</td>
+                <td>23 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>13.00</td>
+                <td>15.00</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;">2</td>
+                <td>24 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>12.00</td>
+                <td>14.00</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;">3</td>
+                <td>25 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>16.00</td>
+                <td>18.00</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;">4</td>
+                <td>26 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>13.00</td>
+                <td>15.00</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;">5</td>
+                <td>27 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>16.00</td>
+                <td>18.00</td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;">6</td>
+                <td>28 Juni 2022</td>
+                <td>
+                  Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
+                </td>
+                <td>14.00</td>
+                <td>16.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="Daftar">
+          <h3>#Daftar</h3>
+          <form action="#">
+            <label>Nama</label> <br />
+            <input type="text" /> <br />
+
+            <label>Umur</label> <br />
+            <input type="text" /> <br />
+
+            <label>Jenis Kelamin</label> <br />
+            <input type="radio" /> Laki Laki <input type="radio" /> Perempuan
+            <br />
+
+            <label>Lokasi</label> <br />
+            <input type="checkbox" />MBK <input type="checkbox" /> Ciplaz
+            Lampung <input type="checkbox" /> Mall Kartini <br />
+
+            <label>Tanggal Nonton</label> <br />
+            <select>
+              <option>Pilih</option>
+              <option>23 Juni 2022</option>
+              <option>24 Juni 2022</option>
+              <option>25 Juni 2022</option>
+              <option>26 Juni 2022</option>
+              <option>27 Juni 2022</option>
+              <option>28 Juni 2022</option>
+            </select>
+            <br />
+            <br />
+
+            <button>Daftar</button>
+          </form>
+        </div>
+
+        <div class="footer">
+          Copyright by Minions
+        </div>
+      </main>
     </div>
-
-    <main>
-      <div class="tentang">
-        <h3>#Minions</h3>
-        <p>
-          Minions The Rise of Gru adalah sekuel dari prekuel spin-off Minions
-          (2015) dan menjadi film kelima secara keseluruhan dalam franchise
-          Despicable Me. Dalam film ini, Pierre Coffin tidak menjadi
-          sutradaranya. Namun, putra sastrawan dan novelis Nh. Dini (almarhum)
-          itu masih mengisi suara para Minions (Kevin, Stuart, Bob, Otto, dan
-          lainnya).
-        </p>
-
-        <video controls width="300" height="175">
-          <source src="minions.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div class="pengalaman">
-        <h3>#Tayang</h3>
-        <table>
-          <thead>
-            <tr>
-              <th rowspan="2">No</th>
-              <th rowspan="2">Jadwal Tayang</th>
-              <th rowspan="2">Lokasi</th>
-              <th colspan="2">Waktu</th>
-            </tr>
-
-            <tr>
-              <th>Mulai</th>
-              <th>Selesai</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td style="text-align: center;">1</td>
-              <td>23 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>13.00</td>
-              <td>15.00</td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center;">2</td>
-              <td>24 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>12.00</td>
-              <td>14.00</td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center;">3</td>
-              <td>25 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>16.00</td>
-              <td>18.00</td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center;">4</td>
-              <td>26 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>13.00</td>
-              <td>15.00</td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center;">5</td>
-              <td>27 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>16.00</td>
-              <td>18.00</td>
-            </tr>
-
-            <tr>
-              <td style="text-align: center;">6</td>
-              <td>28 Juni 2022</td>
-              <td>
-                Boemi Kedaton XXI, Mal Kartini XXI dan Ciplaz Lampung XXI
-              </td>
-              <td>14.00</td>
-              <td>16.00</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="Daftar">
-        <h3>#Daftar</h3>
-        <form action="#">
-          <label>Nama</label> <br />
-          <input type="text" /> <br />
-
-          <label>Umur</label> <br />
-          <input type="text" /> <br />
-
-          <label>Jenis Kelamin</label> <br />
-          <input type="radio" /> Laki Laki <input type="radio" /> Perempuan
-          <br />
-
-          <label>Lokasi</label> <br />
-          <input type="checkbox" />MBK <input type="checkbox" /> Ciplaz Lampung
-          <input type="checkbox" /> Mall Kartini <br />
-
-          <label>Tanggal Nonton</label> <br />
-          <select>
-            <option>Pilih</option>
-            <option>23 Juni 2022</option>
-            <option>24 Juni 2022</option>
-            <option>25 Juni 2022</option>
-            <option>26 Juni 2022</option>
-            <option>27 Juni 2022</option>
-            <option>28 Juni 2022</option>
-          </select>
-          <br />
-          <br />
-
-          <button>Daftar</button>
-        </form>
-      </div>
-
-      <div class="footer">
-        Copyright by Minions
-      </div>
-    </main>
   </body>
 </html>
