@@ -51,6 +51,5 @@
         });
         });
     </script>
-</head>
 </body>
 </html>
